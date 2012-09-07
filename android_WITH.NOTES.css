@@ -1,0 +1,94 @@
+body {
+    background-color: #ddd; /* Background color */
+    color: #222;            /* Foreground color used for text */
+    font-family: Helvetica; 
+    font-size: 14px;
+    margin: 0;              /* Amount of negative space around the 
+                               outside of the body */
+    padding: 0;             /* Amount of negative space around the 
+                               inside of the body */
+}
+
+#header h1 {
+    margin: 0;
+    padding: 0;
+}
+#header h1 a {
+    background-color: #ccc;
+    border-bottom: 1px solid #666;
+    color: #222;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+	text-shadow: 0px 1px 1px #fff;
+    /*In the text-shadow declaration, the parameters from left to right are: horizontal offset,
+vertical offset, blur, and color. Most of the time, you’ll be applying the exact values
+shown here to your text because that’s what usually looks good on Android, but it is
+fun to experiment with text-shadow because it can add a subtle but sophisticated touch
+to your design.*/
+	background-image: -webkit-gradient(linear, left top, left bottom, 
+                                       from(#ccc), to(#999));
+/*The
+parameters from left to right are as follows: the gradient type (can be  linear or
+radial), the starting point of the gradient (can be left top, left bottom, right top, or
+right bottom), the end point of the gradient, the starting color, and the ending color.*/
+}
+#header ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+#header ul li a {
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+	 display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: -1px;
+    padding: 12px 10px;
+    text-decoration: none;
+}
+#header ul li:first-child a {
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+#header ul li:last-child a {
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+/*The occurrences of  :first-child and  :last-child above are called
+pseudoclasses. Pseudoclasses are a special type of CSS selector that allow
+you to target elements that meet certain implicit contextual criteria. In
+other words, you can style things based on characteristics—such as
+where they are in a list, whether they have cursor focus, or if they have
+been clicked—without having to manually update your markup. For
+example, li:first-child will select the first li that is the child of its
+ul parent. Without the code pseudoclass, we’d have to manually add a
+class to the first li to let the browser know that it was the first one.*/
+
+#header ul.hide {
+    display: none;
+}
+#header div.leftButton {
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: rgba (0,0,0,0.6) 0px -1px 1px;
+    line-height: 28px;
+    border-width: 0 8px 0 8px;
+    -webkit-border-image: url(images/button.png) 0 8 0 8;
+}
+#content, #sidebar {
+    padding: 10px;
+}
+#footer {
+    display: none;
+}

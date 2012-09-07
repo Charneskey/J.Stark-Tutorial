@@ -1,0 +1,37 @@
+Notes from J. Stark
+
+Array: var foods = ['Apples', 'Bananas', 'Oranges'];
+basically just like c++
+the '+' concatenates
+
+interact with
+the elements of an HTML page 
+(the cool kids call this “manipulating the DOM”)
+
+you can call a function using onclick="sayHello()" pg 10
+
+need to have downloaded the jquery library and save teh jquery.js 
+file with your web pages. 
+
+jQuery downloads, documentation, and tutorials are available at http:
+//jquery.com. To use jQuery as shown in Example 1-9, you will need to
+download it from there, rename the file you downloaded (such as
+jquery-1.4.2.min.js) to jquery.js, and put a copy of it in the same directory as your HTML document.
+
+you can use WURFL’s PHP API to precisely detect specific
+browsers. See the Appendix for more information on WURFL.
+
+
+If you don’t set the viewport width, the page will be zoomed out when
+it first loads. It’s tough to say exactly what the zoom level will be because
+the Android browser includes a setting that allows users to set the default zoom. The options are Far, Medium (the default), or Close. Even
+if you do set the viewport width, these user-defined settings will affect
+the zoom level of your app.
+
+All text on Android is rendered using a custom font named Droid. The
+Droid font family was specifically built for mobile devices, has excellent
+character set support, and contains three variants: Droid Sans, Droid
+Sans Mono, and Droid Serif. Therefore, specifying a font family of Helvetica as we’ve done here will only have an effect on devices other than
+Android.
+
+stopped on page 21
