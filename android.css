@@ -96,5 +96,8 @@ ul li a:active, ul li a:hover {
 #header div.leftButton.clicked {
     -webkit-border-image: url(images/back_button_clicked.png) 0 8 0 14;
 }
+#footer {
+    display: none;
+}
 
 

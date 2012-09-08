@@ -35,4 +35,17 @@ function loadPage(url) {
         });
         $('#progress').remove();
     });
+	
 }
+function hijackLinks() {
+    $('#container a').click(function(e){
+        e.preventDefault();
+        loadPage(e.target.href);
+    });
+}
+$('#header .leftButton').click(function(e){
+    $(e.target).addClass('clicked');
+    var thisPage = hist.shift();
+    var previousPage = hist.shift();
+    loadPage(lastUrl.url);
+});
